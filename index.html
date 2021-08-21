@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
     <title>Indian Banknote Register</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="index.js"></script>
 </head>
 
 <body>
     <div class="container">
+
         <h1 class="heading">BankNote Register</h1>
         <p class="describtion">Enter the bill amount and cash given by the customer and know minimum numbers of notes returned</p>
         <label for="bill-amt">Bill Amount</label>
-        <input type="number" min="0" name="billAmount" id="bill-amnt">
+        <input type="number" min="0" name="billamnt" id="bill-amnt">
         <button id="btn">Next</button>
         <div class="hidden-cont">
             <label for="cash-amt">Cash Amount</label>
@@ -22,35 +25,36 @@
             <button id="checkBtn">Check</button>
         </div>
         <p id="error-msg"></p>
-        <table id="cash-tabel">
+        <table id="cash-table">
             <caption>Return Change</caption>
             <tbody>
                 <tr>
                     <th>No Of Notes</th>
-                    <td class="no-of-notes">0</td>
-                    <td class="no-of-notes">0</td>
-                    <td class="no-of-notes">0</td>
-                    <td class="no-of-notes">0</td>
-                    <td class="no-of-notes">0</td>
-                    <td class="no-of-notes">0</td>
-                    <td class="no-of-notes">0</td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
                 </tr>
                 <tr>
-                    <th>Notes
-                        <td>2000</td>
-                        <td>500</td>
-                        <td>100</td>
-                        <td>20</td>
-                        <td>10</td>
-                        <td>5</td>
-                        <td>1</td>
-                    </th>
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                    
                 </tr>
             </tbody>
         </table>
-        
+
     </div>
     <!-- <script src="index.html">defer</script> -->
 </body>
 <!-- <script src="index.html">defer</script> -->
+
 </html>
